@@ -58,7 +58,7 @@ In the java class that is implementing the map View's function, the following li
 ```java
 List<Overlay> mapOverlays = mapView.getOverlays();
 //Instantiating the AddressOverlay class we just defined
-//'androidmarker is the name of the image that you wish to place on the map
+//androidmarker is the name of the image that you wish to place on the map
 AddressOverlay addressOverlay = new AddressOverlay(this, address, R.drawable.androidmarker); 
 //adding the overlay to the map
 mapOverlays.add(addressOverlay);
