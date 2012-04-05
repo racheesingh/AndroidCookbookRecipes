@@ -16,7 +16,7 @@ Discussion
 
 This method obtains text from an EditText named: addressText. Then this text is searched for using the getFromLocationName() method of the Geocoder class. From the search results obtained the first result is extracted and displayed as a Toast. If the string returned is of size=0, an appropriate message is displayed.
 
-'''java
+```java
 protected void mapCurrentAddress() {
 	  String addressString = addressText.getText().toString();
 	  Geocoder g = new Geocoder(this);
@@ -38,4 +38,4 @@ protected void mapCurrentAddress() {
 	           e.printStackTrace();
 
 }
-'''
+```
