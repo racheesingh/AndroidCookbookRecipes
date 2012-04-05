@@ -1,4 +1,7 @@
-# Recipe
+# Recipe Title
+Location search on Google maps
+
+# Problem
 Doing a location search using Google Maps.
 
 # Solution

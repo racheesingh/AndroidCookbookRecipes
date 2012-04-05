@@ -1,6 +1,6 @@
-# Recipe
-#Title
+# Recipe Title
 Creating a Custom Tabbed Dialog
+
 # Problem
 The application requires a Dialog-like structure in place of a full-fledged activity to show some information. But the information has to be arranged into categories for it to be easier on the grasp.
 
