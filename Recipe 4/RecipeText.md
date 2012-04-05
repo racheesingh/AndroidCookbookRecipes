@@ -16,30 +16,30 @@ Custom Dialog Class should extend 'Custom Dialog':
 
 Following lines of code need to be added to the 'customDialog' class:
 
-```
-        setTitle("Dialog Title");
-        setContentView(R.layout.custom_dialog_layout);
-        //On Click listeners for the buttons present in the Dialog
-        Button button1 = (Button) findViewById(R.id.button1);
-        Button button2 = (Button) findViewById(R.id.button2);
-        button1.setOnClickListener(new View.OnClickListener() {
-            
-            @Override
-            public void onClick(View v) {
-                dismiss(); //to dismiss the Dialog
-            }
-        });
+```java
+setTitle("Dialog Title");
+setContentView(R.layout.custom_dialog_layout);
 
-		button2.setOnClickListener(new View.OnClickListener() {
+//On Click listeners for the buttons present in the Dialog
+Button button1 = (Button) findViewById(R.id.button1);
+Button button2 = (Button) findViewById(R.id.button2);
+button1.setOnClickListener(new View.OnClickListener() {
+	@Override
+        public void onClick(View v) {
+	    dismiss(); //to dismiss the Dialog
+	}
+    });
+
+button2.setOnClickListener(new View.OnClickListener() {
             
-            @Override
-            public void onClick(View v) {
-            	//Fire an intent on click of this button
-				Intent showQuickInfo = new Intent("com.android.oreilly.QuickInfo");
-                showQuickInfo.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(showQuickInfo);
-            }
-        });
+	@Override
+        public void onClick(View v) {
+	    //Fire an intent on click of this button
+	    Intent showQuickInfo = new Intent("com.android.oreilly.QuickInfo");
+	    showQuickInfo.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	    context.startActivity(showQuickInfo);
+	}
+    });
 ```
 
 The XML code in the layout file (present in /res/layout) custom_dialog_layout :
