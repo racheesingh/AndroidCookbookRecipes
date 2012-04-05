@@ -12,8 +12,6 @@ The location to be searched can be entered into an EditText. The query is search
 
 This method obtains text from an EditText named: addressText. Then this text is searched for using the getFromLocationName() method of the Geocoder class. From the search results obtained the first result is extracted and displayed as a Toast. If the string returned is of size=0, an appropriate message is displayed. 
 
-# Solution
-
 The location to be searched can be entered into an EditText. The query is searched and the search results are extracted. The best out of the location search results is displayed as a toast (This is a sample, many other activities can be done using the location search result).
 Discussion
 
